@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      p {text-align: center;}
+      h1 {text-align: center;}
+      h2 {text-align: center;}
+      a {text-align: center;}
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous"
+  />
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home" href="/">Home</a>
+            <a class="nav-item nav-link" id="apnews" href="/apnews">APNews</a>
+            <a class="nav-item nav-link" id="g1" href="/g1">G1</a>
+            <a class="nav-item nav-link" id="bbc" href="/bbc">BBC</a>
+            <a class="nav-item nav-link" id="bbc" href="/the-economist">The Economist</a>
+          </div>
+        </div>
+      </nav>
+    {% block content %}
+    {% endblock %}
+</body>

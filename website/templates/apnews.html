@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}U-R: APNews{% endblock %}
+{% block content %}
+{% for title, link, desc in list(zip(news[0], news[1], news[2])) %}
+<h2>{{ title }}</h2>
+<p>{{ desc }}</p>
+<a href="{{ link }}" target="_blank"><p>Read</p></a>
+{% endfor %}
+{% endblock %}

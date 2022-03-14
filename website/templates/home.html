@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Ukr-Rus News{% endblock %}
+{% block content %}
+<h1 align="center">News</h1>
+    <p align="center">Here you can check news regarding the war between Ukraine and Russia.</h2>
+
+<h2 align="center">APNews latest article</h2>
+<h3 align="center">{{ sap[0][0] }}</h2>
+<p align="center">{{ sap[2][0] }}</p>
+<a href="{{ sap[1][0] }}" target="_blank"><p>Read</p></a>
+<br>
+<h2 align="center">BBC's latest article</h2>
+<h3 align="center">{{ sbb[0][0] }}</h2>
+<p>{{ sbb[2][0] }}</p>
+<a href="{{ sbb[1][0] }}" target="_blank"><p>Read</p></a>
+<br>
+<h2 align="center">The Economist's latest article</h2>
+<h3 align="center">{{ ste[0][0] }}</h2>
+<p align="center">{{ ste[2][0] }}</p>
+<a href="{{ ste[1][0] }}" target="_blank"><p>Read</p></a>
+<br>
+<h2 align="center">G1's latest article</h2>
+<h3 align="center">{{ s1[0][0] }}</h2>
+<a href="{{ s1[1][0] }}" target="_blank"><p>Read</p></a>
+{% endblock %}
